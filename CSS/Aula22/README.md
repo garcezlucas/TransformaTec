@@ -1,7 +1,9 @@
 # Exercício de CSS com links
 
-## Lista de Exercícios
+## Criação de páginas estilizadas com foco em seletores
 
--[Página 1](./Aula22/paginas/pagina1.html)
+### Lista de Exercícios
 
--[Formulário](./Aula22/paginas/formulario.html)
+-[Página 1](./paginas/pagina1.html)
+
+-[Formulário](./paginas/formulario.html)
