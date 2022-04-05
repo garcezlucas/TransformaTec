@@ -11,18 +11,20 @@
             width: 50%;
             height: 300px;
             background-color: bisque;
-            margin: 10px;
+            margin: 0 auto;
             padding: 10px;
             border: 1px solid black
         }
+
         /* seletor por elementos */
         label {
             color: cadetblue;
             font-size: 20px;
             text-align: center;
         }
+
         /* seletor por agrupados por meio de atributos*/
-        input[type="email"], input[type="password"], input[type="text"]{
+        input[type=email], input[type=password], input[type=text]{
             padding: 12px 20px;
             margin: 8px 0;
             display: flex;
@@ -30,9 +32,9 @@
             box-sizing: border-box;
         }
 
-        /* Seletor por atributos */
-        input[type="submit"] {
-            background-color: #04aa6d;
+        /* Seletor por classe */
+        .botao{
+            background-color: #04AA6D;
             border: none;
             color: white;
             padding: 16px 32px;
@@ -43,7 +45,7 @@
         /* Seletor por elemento */
         form{
             display: flex;
-            
+            flex-direction: column;
         }
 
     </style>
@@ -53,7 +55,7 @@
         <form action="">
             <label for="nome">Nome</label>;
 
-            <input type="text" name="nome" id=""></input>
+            <input type="text" name="nome"></input>
 
             <label for="Email">Email</label>
 
