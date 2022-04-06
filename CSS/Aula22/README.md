@@ -1,4 +1,4 @@
-# Exercício de CSS com links
+# Exercício de CSS
 
 ## Criação de páginas estilizadas com foco em seletores
 

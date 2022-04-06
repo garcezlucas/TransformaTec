@@ -1,6 +1,8 @@
-# Exercício de HTML com formulários
+# Exercício de HTML
 
-## Lista de Exercícios
+## Criando formularios
+
+### Lista de Exercícios
 
 - [Exercício Formulário 1](exercicio1.html)
 - [Exercício Formulário 2](exercicio2.html)

@@ -1,6 +1,6 @@
-# Exercício de CSS com links
+# Exercício de CSS
 
-## Lista de Exercícios
+## Lista de Exercícios sobre estilos com CSS
 
 ### Páginas
 
