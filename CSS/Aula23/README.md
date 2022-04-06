@@ -1,4 +1,4 @@
-# Exercício de CSS sobre resposividade
+# Exercício de CSS
 
 ## Criação de páginas responsivas
 
