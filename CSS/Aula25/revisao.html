@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao Grid</title>
+    <style>
+        .item1 {
+        grid-area: myArea;
+        }
+
+        .item2 {
+
+            grid-area: myArea2;
+        }
+
+        .item5 {
+
+            grid-area: myArea5;
+        }
+
+        .item6 {
+
+            grid-area: myArea6;
+        }
+
+        .item11 {
+
+            grid-area: myArea11;
+        }
+
+        .item12 {
+
+            grid-area: myArea12;
+        }
+
+        .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        
+        grid-template-areas:
+            'myArea  myArea6 myArea3 myArea4 myArea5'
+            'myArea  myArea6 myArea7 myArea8 myArea5'
+            'myArea9 myArea10 myArea11 myArea12 myArea2'
+            ;
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        
+    </div>
+
+</body>
+</html>
