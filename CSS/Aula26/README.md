@@ -4,6 +4,6 @@
 
 ### Lista de Exercícios
 
-- [Página 1] (./paginas/pagina1.html)
+- [Página 1](./paginas/pagina1.html)
 
-- [Formulário] (./paginas/formulario.html)
+- [Formulário](./paginas/formulario.html)
