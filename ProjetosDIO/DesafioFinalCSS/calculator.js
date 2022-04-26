@@ -10,8 +10,8 @@ btns.addEventListener("click",function(e){
     var resultValue = result.innerHTML;
     var btn = e.target;
 
-    var doubleBordered = document.querySelector(".doubleBordered");
-    if(null !== doubleBordered) doubleBordered.classList.remove("doubleBordered");
+    // var doubleBordered = document.querySelector(".doubleBordered");
+    // if(null !== doubleBordered) doubleBordered.classList.remove("doubleBordered");
 
     if(btn.className.indexOf("resetBtn") > -1){
         init();
@@ -39,7 +39,7 @@ btns.addEventListener("click",function(e){
                 }
             }else if(btn.innerHTML === '%'){
                 resultValue = parseFloat(resultValue/100);
-                valStack.push(resultValue);
+                // valStack.push(resultValue);
                 result.innerHTML = resultValue;
                 return;
             }
