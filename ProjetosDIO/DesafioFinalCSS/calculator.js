@@ -1,6 +1,6 @@
 var result = document.querySelector(".result");
 var btns = document.querySelector(".buttons");
-var ops = document.querySelectorAll(".operator");
+var ops  = document.querySelectorAll(".operator");
 var clearToggle = false;
 var timeFlag = false;
 var valStack = [];
@@ -10,8 +10,8 @@ btns.addEventListener("click",function(e){
     var resultValue = result.innerHTML;
     var btn = e.target;
 
-    // var doubleBordered = document.querySelector(".doubleBordered");
-    // if(null !== doubleBordered) doubleBordered.classList.remove("doubleBordered");
+    var doubleBordered = document.querySelector(".doubleBordered");
+    if(null !== doubleBordered) doubleBordered.classList.remove("doubleBordered");
 
     if(btn.className.indexOf("resetBtn") > -1){
         init();
