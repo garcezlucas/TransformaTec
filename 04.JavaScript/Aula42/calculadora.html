@@ -79,6 +79,16 @@
                         break;
                 }
 
+                var obj = {
+
+                    "n1": document.getElementById("input1").value,
+                    "n2": n2,
+                    "op": document.getElementById("ops").value
+                }
+
+                console.log("Objeto: ", obj)
+
+
                 var elem = document.createElement("p")
                 elem.setAttribute("id", "res")
 
