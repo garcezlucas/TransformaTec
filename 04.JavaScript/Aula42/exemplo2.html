@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <p class="text" id="p1">Título</p>
+        <div class="forms" id="forms">
+
+            <input type="text" name="name" id="name" placeholder="Nome" >
+
+            <input type="text" name="age" id="age" placeholder="Idade">
+
+        </div>
+
+        <div class="submit" id="submit">
+
+            <button id="submit" onclick="hello()">Enviar</button>
+
+        </div>
+
+        <div class="footer" id="end">
+            <p>Fim</p>
+        </div>
+
+        <script>
+
+            function oi() {
+                console.log("Funcao oi")
+            }
+
+            function hello() {
+                var name = document.getElementById("name").value;
+                var age = document.getElementById("age").value;
+                console.log("Olá", name,"você tem", age, "anos");
+
+                oi()
+            }
+
+        </script>
+
+</body>
+</html>

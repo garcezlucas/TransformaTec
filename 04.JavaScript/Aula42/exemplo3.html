@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>The Element Object</h1>
+    <h2>The replaceChild() Method</h2>
+
+    <ul id="myList">
+        <li>Coffee</li>
+        
+        <li><h1>P</h1></li>
+        
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+
+    <button onclick="myFunction()">"Replace"</button>
+
+    <script>
+        function myFunction() {
+        // Select first child element:
+            const element = document.getElementById("myList").children[0];
+
+            // Create a new text node:
+            const newNode = document.createElement("h1");
+
+            newNode.innerHTML = "P"
+
+            // Replace the text node:
+            element.replaceChild(newNode, element.childNodes[0]);
+            }
+    </script>
+
+</body>
+</html>
