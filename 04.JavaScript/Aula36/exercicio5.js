@@ -1,9 +1,9 @@
 let usuarios = [
     {
-        nome:"Cassiano",
-        sobrenome:"Peres",
-        idade:"32",
-        email:"cassiano@tranformatec.com"
+        nome:"Lucas",
+        sobrenome:"Garcez",
+        idade:"27",
+        email:"garcezlucas@tranformatec.com"
     },
     {
         nome:"Joao",
