@@ -1,8 +1,8 @@
 var listaDePresenca = 
 {
     "pessoa1":{
-        "nome":"Cassiano",
-        "idade":32
+        "nome":"Lucas",
+        "idade":27
     },
 
     "pessoa2":{

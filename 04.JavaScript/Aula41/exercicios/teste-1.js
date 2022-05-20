@@ -1,8 +1,8 @@
 var pessoa = {
     //chave
-    nome:"Cassiano",
+    nome:"Lucas",
          //valor
-    idade:32,
+    idade:27,
 
     "tipo-pessoa":" PJ"
 }

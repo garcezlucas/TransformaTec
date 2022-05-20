@@ -1,7 +1,7 @@
 var pessoa = {
 
-    nome:"Cassiano",
-    idade: 32,
+    nome:"Lucas",
+    idade: 27,
     esportes: ["futebol", "basquete", "canelada"]
 }
 

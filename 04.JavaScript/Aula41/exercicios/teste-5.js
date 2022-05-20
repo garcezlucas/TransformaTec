@@ -1,7 +1,7 @@
 //objeto
 var pessoa = {
-    "nome":"Cassiano",
-    "idade": 32
+    "nome":"Lucas",
+    "idade": 27
 }
 
 var tipo = typeof(pessoa)
@@ -38,8 +38,8 @@ console.log("Pessoa Obj parsed: ", pessoaObj)
 ///convertendo objeto em string
 
 var pessoaObj = {
-    "nome":"Cassiano",
-    "idade": 32
+    "nome":"Lucas",
+    "idade": 27
 }
 
 var stringPessoa = JSON.stringify(pessoaObj)

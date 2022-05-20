@@ -1,7 +1,7 @@
 ///variável do tipo objeto
 var pessoa = {
-    nome:"Cassiano",
-    idade:32,
+    nome:"Lucas",
+    idade:27,
     estudante: true
 }
 //switch/case que escolhe entre duas possibilidades de opções
