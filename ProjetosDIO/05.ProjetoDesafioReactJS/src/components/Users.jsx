@@ -12,27 +12,28 @@ export default function Users() {
 
     const initForm = {id:null, name:'', username:'', email:'', age:null};
 
-    cosnt [users, setUsers] = useState(users);
-    const [currentUser, setCurrentUser] = useState(initForm)
+    const [users, setUsers] = useState(usersData);
+    const [currentUser, setCurrentUser] = useState(initForm);
     const [editing, setEditing] = useState(false);
 
     const addUser = (user) => {
-        user.id = Users.length + 1
+        user.id = users.length + 1
+        setUsers([...users, user]);
     }
 
     const deleteUser = (id) => {
         setEditing(false);
-        setUsers(users.filter(user => user.id !== id))
+        setUsers(users.filter(user => user.id !== id));
     }
 
     const updateUser = (id, updatedUser) => {
         setEditing(false);
-        setUsers(users.map(user => (user.id === id ? updatedUser : user)))
+        setUsers(users.map(user => (user.id === id ? updatedUser : user)));
     }
 
     const editRow = (user) => {
-        setEditing(true)
-        setCurrentUser({id: user.id, name: user.name, username: user.username, email: user.email, age: user.age})
+        setEditing(true);
+        setCurrentUser({id: user.id, name: user.name, username: user.username, email: user.email, age: user.age});
     }
 
 }
