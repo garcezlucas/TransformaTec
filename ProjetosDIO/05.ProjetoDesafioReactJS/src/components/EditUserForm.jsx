@@ -1,4 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import styled from 'styled-components';
+import {StyledForm} from './Form.styles';
+
+const ConfirmButton = styled.button`
+    background: lightgreen;
+`
+const CancelButton = styled.button`
+    background: lightcoral;
+`
 
 const EditUserForm = (props) => {
 
@@ -18,7 +27,9 @@ const EditUserForm = (props) => {
 
         return (
 
-            <form onSubmit = {
+            <form 
+                style = {StyledForm.StyledForm}
+                onSubmit = {
                 (event) => {
                     event.preventDefault()
 
@@ -26,13 +37,20 @@ const EditUserForm = (props) => {
                 }
             }>
 
+                <label>Nome</label>
                 <input type = "text" name = "name" value = {user.name} onChange = {handleInputChange} placeholder = "Nome" />
-                <input type = "text" name = "username" value = {user.username} onChange = {handleInputChange} placeholder = "NickName" />
+
+                <label>Username</label>
+                <input type = "text" name = "username" value = {user.username} onChange = {handleInputChange} placeholder = "Nickname" />
+
+                <label>Email</label>
                 <input type = "text" name = "email" value = {user.email} onChange = {handleInputChange} placeholder = "Email" />
+
+                <label>Idade</label>
                 <input type = "number" name = "age" value = {user.age} onChange = {handleInputChange} placeholder = "Idade" /> 
 
-                <button>Atualizar</button>
-                <button onClick = {() => {props.setEditing(false)}}>Cancelar</button>
+                <ConfirmButton>Atualizar</ConfirmButton>
+                <CancelButton onClick = {() => {props.setEditing(false)}}>Cancelar</CancelButton>
 
             </form>
 
