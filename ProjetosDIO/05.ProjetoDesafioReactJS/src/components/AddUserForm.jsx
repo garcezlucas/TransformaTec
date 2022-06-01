@@ -2,15 +2,15 @@ import React, {useState} from 'react';
 
 const AddUserForm = (props) => {
 
-    const initForm = {id:null, name:'', username:'', email:'', age:''};
-    const [user, setUser] = useState(initForm);
+    const initForm = {id:null, name:'', username:'', email:'', age:''}
+    const [user, setUser] = useState(initForm)
 
     const handleInputChange = (event) => {
 
-        const {name, value} = event.target;
+        const {name, value} = event.target
 
         // O operador spread (...) pega o valor de cada campo do formulário e altera o estado inicial do formulário com os dados do novo usuário (funciona como um loop em um array de campos)
-        setUser({...user, [name]:value});
+        setUser({...user, [name]:value})
 
     }
 
@@ -18,12 +18,12 @@ const AddUserForm = (props) => {
 
         <form onSubmit = {
             (event) => {
-                event.preventDefault();
+                event.preventDefault()
 
-                if(!user.name || !user.username || !user.email || !user.age) return;
+                if(!user.name || !user.username || !user.email || !user.age) {return}
 
-                props.addUser(user);
-                setUser(initForm);
+                props.addUser(user)
+                setUser(initForm)
             }
         }>
 
