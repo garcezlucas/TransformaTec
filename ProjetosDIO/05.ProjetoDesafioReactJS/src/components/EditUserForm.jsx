@@ -27,12 +27,12 @@ const EditUserForm = (props) => {
             }>
 
                 <input type = "text" name = "name" value = {user.name} onChange = {handleInputChange} placeholder = "Nome" />
-                <input type = "text" name ="userName" value = {user.userName} onChange = {handleInputChange} placeholder = "NickName" />
+                <input type = "text" name = "username" value = {user.username} onChange = {handleInputChange} placeholder = "NickName" />
                 <input type = "text" name = "email" value = {user.email} onChange = {handleInputChange} placeholder = "Email" />
                 <input type = "number" name = "age" value = {user.age} onChange = {handleInputChange} placeholder = "Idade" /> 
 
                 <button>Atualizar</button>
-                <button onClick = {() => props.setEditing(false)}>Cancelar</button>
+                <button onClick = {() => {props.setEditing(false)}}>Cancelar</button>
 
             </form>
 

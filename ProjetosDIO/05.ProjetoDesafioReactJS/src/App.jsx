@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="App">
       <Users/>
-      <AddUserForm/>
-      <EditUserForm/>
+      {/* <AddUserForm/> */}
+      {/* <EditUserForm/> */}
     </div>
-  );
+  )
 }
 
 export default App;

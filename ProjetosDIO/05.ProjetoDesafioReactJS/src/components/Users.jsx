@@ -6,11 +6,10 @@ import UsersTable from './UsersTable';
 export default function Users() {
 
     const usersData = [
-        {id:1, name:'Lucas', username:'Badégo', email:'garcezlucas.silva@gmail.com', age:27},
-        {id:2, name:'Jose', username:'Josesss', email:'jose@gmail.com', age:80},
+        {id:1, name:'Lucas', username:'Badego', email:'garcezlucas.silva@gmail.com', age:27},
     ]
 
-    const initForm = {id:null, name:'', username:'', email:'', age:null};
+    const initForm = {id:null, name:null, username:null, email:null, age:null}
 
     const [users, setUsers] = useState(usersData);
     const [currentUser, setCurrentUser] = useState(initForm);
@@ -35,5 +34,43 @@ export default function Users() {
         setEditing(true);
         setCurrentUser({id: user.id, name: user.name, username: user.username, email: user.email, age: user.age});
     }
+
+    return (
+        <div>
+            <h2>Cadastro de Usuários</h2>
+            <div>
+                <div>
+                    {
+                        editing ? (
+                            <div>
+                                <h3>Editar Usuário</h3>
+                                <EditUserForm
+                                    editing = {editing}
+                                    setEditing = {setEditing}
+                                    currentUser = {currentUser}
+                                    updateUser = {updateUser}
+                                />
+                            </div>
+                        ):(
+                            <div>
+                                <h3>Adicionar Usuário</h3>
+                                <AddUserForm
+                                    addUser = {addUser}
+                                />
+                            </div>
+                        )
+                    }
+                </div>
+                <div>
+                    <h3>Lista de Usuários</h3>
+                    <UsersTable 
+                        users = {users} 
+                        editRow = {editRow} 
+                        deleteUser = {deleteUser}
+                />
+                </div>
+            </div>
+        </div>
+    )
 
 }
