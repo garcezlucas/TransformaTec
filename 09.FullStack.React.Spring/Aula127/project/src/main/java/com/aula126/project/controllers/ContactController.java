@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api")
 //localhost:8080/api/...
 public class ContactController{
     
@@ -37,7 +37,7 @@ public class ContactController{
     UserRepository userRepository;
 
     @PostMapping("/users/{id}/contacts")
-    //localhost:8080/api/users/2/contacts
+    //localhost:8080/api/users/1/contacts
 
     @ApiResponses({
         @ApiResponse(code = 200, message = "OK"),
@@ -60,7 +60,7 @@ public class ContactController{
     }
 
     @GetMapping("/users/{id}/contacts")
-    //localhost:8080/api/users/2/contacts
+    //localhost:8080/api/users/1/contacts
     @ApiResponses({
         @ApiResponse(code = 200, message = "OK"),
         @ApiResponse(code = 500, message = "Internal Server Error")

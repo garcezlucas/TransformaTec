@@ -22,7 +22,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api")
 public class PhoneController {
 
     @Autowired

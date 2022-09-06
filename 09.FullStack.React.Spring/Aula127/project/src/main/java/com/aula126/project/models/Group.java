@@ -1,5 +1,6 @@
 package com.aula126.project.models;
 
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

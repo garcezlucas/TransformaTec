@@ -15,15 +15,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.aula126.project.models.Contact;
 import com.aula126.project.models.Group;
+import com.aula126.project.models.User;
 import com.aula126.project.repositories.ContactRepository;
 import com.aula126.project.repositories.GroupRepository;
+import com.aula126.project.repositories.UserRepository;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api")
 public class GroupController {
 
     @Autowired
