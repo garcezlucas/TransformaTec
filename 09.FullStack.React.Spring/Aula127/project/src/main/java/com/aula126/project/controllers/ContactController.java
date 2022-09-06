@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/auth")
 //localhost:8080/api/...
 public class ContactController{
     
